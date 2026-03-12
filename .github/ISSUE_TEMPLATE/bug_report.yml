@@ -1,0 +1,82 @@
+name: Bug Report
+description: Report a bug or issue
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this bug!
+        
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Clear description of what went wrong
+      placeholder: The hotspot fails to start when...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this?
+      placeholder: |
+        1. Connect to VPN
+        2. Click 'Start VPN Hotspot'
+        3. See error...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen?
+      placeholder: Hotspot should start successfully
+    validations:
+      required: true
+      
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste relevant logs
+      placeholder: |
+        From travel_router_debug.log:
+        ERROR - Failed to create hotspot...
+        
+        From /tmp/hostapd.log:
+        nl80211: Failed to...
+      render: shell
+      
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      placeholder: Ubuntu 24.04
+    validations:
+      required: true
+      
+  - type: input
+    id: python
+    attributes:
+      label: Python Version
+      placeholder: Python 3.12
+    validations:
+      required: true
+      
+  - type: input
+    id: vpn
+    attributes:
+      label: VPN Type
+      placeholder: WireGuard (nordlynx)
+    validations:
+      required: true
+      
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other relevant information
