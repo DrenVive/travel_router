@@ -1,0 +1,27 @@
+# Log files
+*.log
+gui_output.log
+travel_router_debug.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Temporary files
+*.tmp
+/tmp/
+
+# IDE
+.vscode/
+.idea/
+
+# Config files with secrets
+config.encrypted
