@@ -1,0 +1,3 @@
+python-networkmanager
+cryptography
+keyring
