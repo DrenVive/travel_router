@@ -4,16 +4,16 @@ A GTK4 application that turns your Linux laptop into a VPN-enabled WiFi hotspot 
 
 ## Features
 
-- 🔒 **VPN Routing** - All hotspot traffic routes through your VPN
-- 📡 **WiFi Hotspot** - Share internet with multiple devices
-- 🖥️ **GTK4 GUI** - Modern, user-friendly interface
-- 🔍 **Auto-detection** - Finds VPN and WiFi interfaces automatically
-- 📝 **Debug Logging** - Complete activity logs for troubleshooting
-- 🔐 **Encrypted Config** - Secure configuration storage with system keyring
+- **VPN Routing** - All hotspot traffic routes through your VPN
+- **WiFi Hotspot** - Share internet with multiple devices
+- **GTK4 GUI** - Modern, user-friendly interface
+- **Auto-detection** - Finds VPN and WiFi interfaces automatically
+- **Debug Logging** - Complete activity logs for troubleshooting
+- **Encrypted Config** - Secure configuration storage with system keyring
 
 ## Requirements
 
-⚠️ **IMPORTANT:** You need **TWO** network interfaces:
+**IMPORTANT:** You need **TWO** network interfaces:
 1. **One for internet input** (Ethernet OR WiFi adapter)
 2. **One for hotspot output** (WiFi adapter)
 
@@ -28,8 +28,7 @@ A GTK4 application that turns your Linux laptop into a VPN-enabled WiFi hotspot 
 - USB WiFi adapter
 
 **Won't Work:**
-- ❌ Single WiFi interface only
-- ❌ Trying to connect to WiFi AND broadcast hotspot on same adapter
+- Single WiFi interface only. Trying to connect to WiFi AND broadcast hotspot on same adapter
 
 ## Installation
 
@@ -130,10 +129,10 @@ grep ERROR travel_router_debug.log
 
 ## Supported VPN Types
 
-- ✅ OpenVPN
-- ✅ WireGuard (NordLynx, etc.)
-- ✅ TUN-based VPNs
-- ⚠️ May need adjustment for other types
+- OpenVPN
+- WireGuard (NordLynx, etc.)
+- TUN-based VPNs
+- May need adjustment for other types
 
 ## Known Limitations
 
